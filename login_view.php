@@ -15,17 +15,20 @@
     
     <div class="grid_login">
     	<div class="grid_title d-flex justify-content-center align-items-center">
-    		<h1>Feisbuk</h1>
+    		<div class="text-center">
+          <h1>Feisbuk</h1>
+          <h3>Es gratis y lo será siempre.</h3>
+        </div>
     	</div>
 	    <form class="form-signin">
 	      <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-	      <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+	      <h1 class="h3 mb-3 font-weight-normal text-center">Login</h1>
 	      <label for="user_login" class="sr-only">User</label>
 	      <input type="text" id="user_login" class="form-control rounded-0" placeholder="Nick" required autofocus>
 	      <label for="pass_login" class="sr-only">Password</label>
 	      <input type="password" id="pass_login" class="form-control rounded-0 mt-3" placeholder="Password" required>
-	      <button class="btn btn-lg btn-primary btn-block rounded-0" type="submit">Iniciar sesión</button>
-	      <p class="text-center">¿No tienes una cuenta? <br> Regístrate <a href="#">aquí</a></p>
+	      <button class="btn btn-lg btn-feisbuk btn-block rounded-0" type="submit">Iniciar sesión</button>
+	      <p class="text-center">¿No tienes una cuenta? <br> Regístrate <a href="#">aquí</a>.</p>
 	    </form>
     </div>
 
