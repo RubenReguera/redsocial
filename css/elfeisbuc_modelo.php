@@ -21,5 +21,6 @@ class elfeisbuc_modelo extends CI_Model
     }
 	}
 
+
 }
 ?>
