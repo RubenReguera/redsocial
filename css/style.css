@@ -11,7 +11,11 @@ body {
 }
 
 .grid_title{
-  background-color: #4267B2;
+
+  background-color: #1d2129;
+
+  /* background-color: #4267B2; */
+
 
 }
 .grid_title h1 {
@@ -25,9 +29,11 @@ body {
   padding: 15px;
   margin: auto;
 }
-/*.form-signin .checkbox {
+
+.form-signin .checkbox {
   font-weight: 400;
-}*/
+}
+
 .form-signin .form-control {
   position: relative;
   box-sizing: border-box;
@@ -49,7 +55,19 @@ body {
   border-top-right-radius: 0;
 }
 
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+
+
 .btn-feisbuk{
   background-color: #4267B2;
   color: #fff;
 }
+
