@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style_feisbuc.css">
 
     <title>Feisbuk | Login</title>
   </head>
@@ -28,7 +28,7 @@
 	      <label for="pass_login" class="sr-only">Password</label>
 	      <input type="password" id="pass_login" class="form-control rounded-0 mt-3" placeholder="Password" required>
 	      <button class="btn btn-lg btn-feisbuk btn-block rounded-0" type="submit">Iniciar sesión</button>
-	      <p class="text-center">¿No tienes una cuenta? <br> Regístrate <a href="#">aquí</a>.</p>
+	      <p class="text-center">¿No tienes una cuenta? <br> Regístrate <a href="<?php echo base_url(); ?>index.php/elfeisbuc_controller/registro">aquí</a>.</p>
 	    </form>
     </div>
 

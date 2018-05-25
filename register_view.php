@@ -7,44 +7,54 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style_feisbuc.css">
 
     <title>Feisbuk | Register</title>
+
+    <?php 
+      if(form_error('pass2_register')){ ?>
+        
+        <script>alert('<?php echo strip_tags(form_error("pass2_register"));?>')</script>
+    <?php } ?>
+
   </head>
   <body>
     
     <div class="grid_login">
     	<div class="grid_title d-flex justify-content-center align-items-center">
 
-    	/* <h1>Feisbuk</h1>
+    	<!-- <h1>Feisbuk</h1>
     	</div>
 	    <form class="form-signin">
 	      <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-	      <h1 class="h3 mb-3 font-weight-normal">Register</h1> */
+	      <h1 class="h3 mb-3 font-weight-normal">Register</h1> -->
 
     		<div class="text-center">
               <h1>Feisbuk</h1>
               <h3>Es gratis y lo será siempre.</h3>
             </div>
     	</div>
-	    <form class="form-signin">
+	    <?php 
+        $attributes = array('class' => 'form-signin');
+        echo form_open('elfeisbuc_controller/formularioregistro', $attributes);
+      ?>"
 	      <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
 	      <h1 class="h3 mb-3 font-weight-normal text-center">Register</h1>
 	      <label for="user_register" class="sr-only">User</label>
-	      <input type="text" id="user_register" class="form-control rounded-0" placeholder="Nick" required autofocus>
+	      <input type="text" name="user_register" id="user_register" class="form-control rounded-0" placeholder="Nick" required autofocus>
 
         <label for="email_register" class="sr-only">User</label>
-        <input type="email" id="email_register" class="form-control rounded-0 mt-3" placeholder="E-mail" required autofocus>
+        <input type="email" name="email_register" id="email_register" class="form-control rounded-0 mt-3" placeholder="E-mail" required autofocus>
 
 	      <label for="pass_register" class="sr-only">Password</label>
-	      <input type="password" id="pass_register" class="form-control rounded-0 mt-3" placeholder="Password" required>
+	      <input type="password" name="pass_register" id="pass_register" class="form-control rounded-0 mt-3" placeholder="Password" required>
 
         <label for="pass2_register" class="sr-only">Password</label>
-        <input type="password" id="pass2_register" class="form-control rounded-0 mt-3" placeholder="Confirmed password" required>
+        <input type="password" name="pass2_register" id="pass2_register" class="form-control rounded-0 mt-3" placeholder="Confirmed password" required>
         
 	      <button class="btn btn-lg btn-primary btn-block rounded-0" type="submit">Register</button>
-        <p class="text-center">¿Ya tienes una cuenta? <br> Inicia sesión <a href="#">aquí</a></p>
-	    </form>
+        <p class="text-center">¿Ya tienes una cuenta? <br> Inicia sesión <a href="<?php echo base_url(); ?>index.php/elfeisbuc_controller">aquí</a></p>
+      </form>
     </div>
 
 
