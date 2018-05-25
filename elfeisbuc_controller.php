@@ -49,6 +49,7 @@ class elfeisbuc_controller extends CI_Controller {
         				$this->load->view('footer_view');
                 }
                 else {
+                		$this->elfeisbuc_modelo->crearUser();
                 		echo "<script>alert('El usuario ha sido creado con éxito.')</script>";
                     	$this->load->helper('url');
         				$this->load->view('login_view');
