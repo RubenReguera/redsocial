@@ -94,17 +94,25 @@ body {
 .link-feisbuc{
   color: #fff;
   margin-right: 10px;
+  padding: 10px;
 
+}
+
+.logo_home{
+  color: #fff;
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.75);
 }
 
 .link-feisbuc:hover{
 
   text-decoration: none;
   color: #fff;
+  border: solid 1px #fff;
 }
 
 .grid_box_1{
-  background-color: red;
+  background-color: rgba(219, 219, 219, .3);
+  height: 100vh;
 }
 
 .grid_home{
@@ -115,4 +123,12 @@ body {
 
 .grid_items{
   margin: 5%;
+}
+
+.nav-faisbuc{
+  color: rgba(255, 255, 255, .5) !important;
+}
+
+.nav-faisbuc:hover{
+  color: rgba(255, 255, 255, 1) !important;
 }
