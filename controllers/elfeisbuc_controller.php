@@ -96,5 +96,4 @@ class elfeisbuc_controller extends CI_Controller {
                 }                       
         }
 
->>>>>>> master
 }
